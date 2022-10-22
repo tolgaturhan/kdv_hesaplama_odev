@@ -11,14 +11,17 @@ public class Main {
 
         if (tutar < 1000) {
             kdv = tutar * kdvOran;
+            kdvOran = 18;
         }
             else{
                 kdv = tutar * kdvOran2;
+                kdvOran = 8;
             }
 
         toplam = tutar + kdv;
-        System.out.println("Kdv Hariç Fiyat: " + tutar);
-        System.out.println("Kdv Tutarı: " + kdv);
-        System.out.println("Kdv Dahil Fiyat: " + toplam);
+        System.out.println("Kdv Hariç Fiyat: " + tutar + " TL");
+        System.out.println("Kdv Oranı: %" + kdvOran);
+        System.out.println("Kdv Tutarı: " + kdv + " TL");
+        System.out.println("Kdv Dahil Fiyat: " + toplam + " TL");
     }
 }
